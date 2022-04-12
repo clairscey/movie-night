@@ -8,6 +8,11 @@ document.querySelector('button').addEventListener('click', searchMovie)
 document.querySelector('#movie1').addEventListener('click', displayTrailer1)
 document.querySelector('#movie2').addEventListener('click', displayTrailer2)
 document.querySelector('#movie3').addEventListener('click', displayTrailer3)
+document.querySelector('#movieSearch').addEventListener('keyup', e => {
+  if (e.keyCode === 13) {
+      searchMovie();
+  }
+})
 
 
 
